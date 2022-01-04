@@ -18,6 +18,7 @@
 // This is based on the prior work done by Markus Sattler for ESP8266 BASE64
 // implementation and Per Ejeklint for ArduinoWebsocketServer project
 //
+// @version API 1.2.0 - Included arduino.h in the header file (by @tschaban)
 // @version API 1.1.0 - Adding Generics 20th Mar 2018 
 //                (Breaking Backward Compatibility due to Memory constrains)
 // @version API 1.0.0 - Initial API
@@ -28,6 +29,8 @@
 
 #ifndef _RBASE64_H
 #define _RBASE64_H
+
+#include <Arduino.h>
 
 // This is the Size for the Default class @ref rbase64
 #define RBASE64_MAX_DEFAULT_SIZE 100
